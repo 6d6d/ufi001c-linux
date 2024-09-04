@@ -39,7 +39,7 @@ cat > .ci-build.sh <<EOF
 set -eux
 
 cat arch/arm64/configs/msm8916_defconfig arch/arm/configs/msm8916_defconfig.part > arch/arm/configs/msm8916_defconfig
-make $MAKE_OPTS msm8916_defconfig
+make $MAKE_OPTS 001c_defconfig
 echo CONFIG_WERROR=y >> .config
 make $MAKE_OPTS
 EOF
