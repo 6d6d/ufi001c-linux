@@ -4,9 +4,9 @@ DOWNLOAD_SERVER="images.linuxcontainers.org"
 DOWNLOAD_INDEX_PATH="/meta/1.0/index-system"
 DOWNLOAD_DISTRO="debian;bookworm;arm64;default"
 
-DTB_FILE=msm8916-thwc-ufi001c.dtb
-DTB_FILE_NO_MODEM=msm8916-thwc-ufi001c-no-modem.dtb
-DTB_FILE_NO_MODEM_OC=msm8916-thwc-ufi001c-no-modem-oc.dtb
+DTB_FILE=msm8916-thwc-ufi003.dtb
+DTB_FILE_NO_MODEM=msm8916-thwc-ufi003-no-modem.dtb
+DTB_FILE_NO_MODEM_OC=msm8916-thwc-ufi003-no-modem-oc.dtb
 RAMDISK_FILE=initrd.img
 
 rootfs_url="https://$DOWNLOAD_SERVER$(curl -m 10 -fsSL "https://$DOWNLOAD_SERVER$DOWNLOAD_INDEX_PATH" | grep "$DOWNLOAD_DISTRO" | cut -f 6 -d ';')rootfs.tar.xz"
