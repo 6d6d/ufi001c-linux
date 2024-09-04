@@ -1,7 +1,8 @@
 name: Release kernel deb packages
 on:
-  workflow_dispatch:
-
+  push:
+    tags:
+      - "*"
 jobs:
   build:
     name: Build kernel
