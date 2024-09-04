@@ -20,7 +20,7 @@ case "$1" in
 gcc)
 	case "$ARCH" in
 		arm64)	gcc_toolchain=aarch64-none-elf ;;
-		arm)	gcc_toolchain=arm-none-eabi ;;
+		# arm)	gcc_toolchain=arm-none-eabi ;;
 	esac
 	apk add "gcc-$gcc_toolchain"
 	MAKE_OPTS="CROSS_COMPILE=$gcc_toolchain-"
