@@ -6,7 +6,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        arch: [arm64, arm]
+        arch: [arm64]
         compiler: [gcc, clang]
     env:
       ARCH: ${{ matrix.arch }}
